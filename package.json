@@ -1,0 +1,31 @@
+{
+  "name": "electron-ipc-rpc",
+  "version": "1.0.0",
+  "description": "Simple and tiny RPC wrapper around electron ipc",
+  "main": "index.js",
+  "scripts": {
+    "test": "camo-purge ; xo --space 4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hobbyquaker/electron-ipc-rpc.git"
+  },
+  "keywords": [
+    "electron",
+    "ipc",
+    "rpc"
+  ],
+  "author": "Sebastian Raff <hq@ccu.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hobbyquaker/electron-ipc-rpc/issues"
+  },
+  "homepage": "https://github.com/hobbyquaker/electron-ipc-rpc#readme",
+  "devDependencies": {
+    "camo-purge": "latest",
+    "xo": "latest"
+  },
+  "dependencies": {
+    "uuid": "^3.1.0"
+  }
+}
