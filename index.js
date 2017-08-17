@@ -31,6 +31,11 @@ class Rpc extends events.EventEmitter {
     send(cmd, params, callback) {
         const id = uuid();
 
+        if (typeof params === 'function') {
+            callback = params;
+            params = [];
+        }
+
         if (callback) {
             this.callbacks[id] = callback;
             this.timeouts[id] = setTimeout(() => {
