@@ -11,19 +11,19 @@ class Rpc extends events.EventEmitter {
 
         ipc.on('cmd', (event, data) => {
             const [id, cmd, params] = data;
-            this.emit(cmd, params, (err, params) => {
-                this.client.send('res', [id, params]);
+            this.emit(cmd, params, (err, res) => {
+                this.client.send('res', [id, err, res]);
             });
         });
 
         ipc.on('res', (event, data) => {
-            const [id, params] = data;
+            const [id, err, res] = data;
             if (this.callbacks[id]) {
                 clearTimeout(this.timeouts[id]);
                 const callback = this.callbacks[id];
                 delete this.callbacks[id];
                 delete this.timeouts[id];
-                callback(null, params);
+                callback(err, res);
             }
         });
     }
