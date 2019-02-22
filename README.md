@@ -1,7 +1,7 @@
 # electron-ipc-rpc
 
 [![NPM version](https://badge.fury.io/js/electron-ipc-rpc.svg)](http://badge.fury.io/js/electron-ipc-rpc)
-[![Dependency Status](https://img.shields.io/gemnasium/hobbyquaker/electron-ipc-rpc.svg?maxAge=2592000)](https://gemnasium.com/github.com/hobbyquaker/electron-ipc-rpc)
+[![dependencies Status](https://david-dm.org/hobbyquaker/electron-ipc-rpc/status.svg)](https://david-dm.org/hobbyquaker/electron-ipc-rpc)
 [![Build Status](https://travis-ci.org/hobbyquaker/electron-ipc-rpc.svg?branch=master)](https://travis-ci.org/hobbyquaker/electron-ipc-rpc)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
 [![License][mit-badge]][mit-url]
